@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SenseBeat — CRM, WhatsApp Automation & Live Ads Dashboard for Malaysian Clinics</title>
+<meta name="description" content="SenseBeat answers every lead in under 2 minutes — CRM pipeline, WhatsApp automation and a live Meta + Google ads dashboard in one PDPA-compliant platform. Live in 7 days.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..1000;1,9..40,300..1000&family=Geist:wght@300..800&family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230A5CE8'/><path d='M7 19c3-9 6 3 9-6s6 3 9-4' stroke='white' stroke-width='2.6' fill='none' stroke-linecap='round'/></svg>">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav-wrap">
+  <nav class="nav container">
+    <a class="logo" href="#top" aria-label="SenseBeat home">SenseBeat</a>
+    <div class="nav-links" id="navLinks">
+      <a href="#why">Why SenseBeat</a><span class="dot" aria-hidden="true"></span>
+      <a href="#features">Features</a><span class="dot" aria-hidden="true"></span>
+      <a href="#pricing">Pricing</a><span class="dot" aria-hidden="true"></span>
+      <a href="#faq">FAQ</a>
+    </div>
+    <a class="btn btn-primary nav-cta" href="https://wa.me/60193541688?text=Hi%20MYSense%2C%20I%27d%20like%20a%20SenseBeat%20demo." target="_blank" rel="noopener">
+      <span class="btn-ico" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M4 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/></svg><svg viewBox="0 0 16 16"><path d="M4 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/></svg></span>
+      <span class="btn-label">Book a demo</span>
+    </a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
+  </nav>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+    <a href="#why">Why SenseBeat</a>
+    <a href="#features">Features</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#faq">FAQ</a>
+    <a class="btn btn-primary" href="https://wa.me/60193541688?text=Hi%20MYSense%2C%20I%27d%20like%20a%20SenseBeat%20demo." target="_blank" rel="noopener">
+      <span class="btn-ico" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M4 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span class="btn-label">Book a demo</span>
+    </a>
+</div>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-card">
+    <img class="hero-bg" src="assets/img/hero.jpg" alt="" aria-hidden="true">
+    <div class="hero-tint" aria-hidden="true"></div>
+    <div class="hero-content">
+      <h1 class="appear">Your leads are <em>leaking.</em><br>SenseBeat fixes that.</h1>
+      <p class="appear d1">One platform for Malaysian clinics and SMEs — CRM pipeline, WhatsApp automation and a live Meta&nbsp;+&nbsp;Google ads dashboard. Every enquiry answered in under 2&nbsp;minutes, even at midnight.</p>
+      <div class="appear d2">
+        <a class="btn btn-primary btn-lg" href="https://wa.me/60193541688?text=Hi%20MYSense%2C%20I%27d%20like%20a%20SenseBeat%20demo." target="_blank" rel="noopener">
+          <span class="btn-ico" aria-hidden="true"><svg viewBox="0 0 16 16"><path d="M4 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/></svg><svg viewBox="0 0 16 16"><path d="M4 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/></svg></span>
+          <span class="btn-label">Get started free</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUSTED / LOGO TICKER ============ -->
+<section class="trusted">
+  <p class="trusted-label appear">Works with the platforms you already run</p>
+  <div class="ticker-mask appear d1">
+    <div class="ticker-track" id="logoTicker">
+      <div class="ticker-set">
+        <span class="tlogo"><img src="assets/logos/meta.svg" alt="Meta">Meta</span>
+        <span class="tlogo"><img src="assets/logos/googleads.svg" alt="Google Ads">Google&nbsp;Ads</span>
+        <span class="tlogo"><img src="assets/logos/whatsapp.svg" alt="WhatsApp">WhatsApp&nbsp;Business</span>
+        <span class="tlogo"><img src="assets/logos/tiktok.svg" alt="TikTok">TikTok&nbsp;Ads</span>
+        <span class="tlogo"><img src="assets/logos/zapier.svg" alt="Zapier">Zapier</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SPEED / 5-MINUTE RULE ============ -->
+<section class="speed container">
+  <div class="sec-head split">
+    <div>
+      <p class="badge appear">The 5-minute rule</p>
+      <h2 class="appear d1">Reply in five minutes,<br><em class="soft">or lose the lead.</em></h2>
+    </div>
+    <p class="sec-sub appear d2">Speed-to-lead research is blunt: response time beats ad budget. Most clinics reply in hours — SenseBeat sends the first reply before your front desk even sees the enquiry.</p>
+  </div>
+  <div class="stat-grid">
+    <div class="sstat appear"><b>100×</b><span>more likely to qualify a lead when you respond within 5 minutes</span></div>
+    <div class="sstat appear d1"><b>391%</b><span>higher conversion when the first reply lands within a minute</span></div>
+    <div class="sstat dark appear d2"><b>30%</b><span>of ignored leads end up booking with a competitor instead</span></div>
+    <div class="sstat appear d3"><b>82%</b><span>of patients expect an answer within 10 minutes of asking</span></div>
+  </div>
+  <p class="stat-src appear d3">Industry speed-to-lead data, compiled by LeadAngel.</p>
+</section>
+
+<!-- ============ BENEFITS ============ -->
+<section class="benefits container" id="why">
+  <div class="sec-head split">
+    <div>
+      <p class="badge appear">Why SenseBeat</p>
+      <h2 class="appear d1">Not another spreadsheet.<br>A system that chases.</h2>
+    </div>
+    <p class="sec-sub appear d2">Most clinics log enquiries and hope for the best. SenseBeat answers each lead instantly, books the appointment, and follows up until they show.</p>
+  </div>
+
+  <div class="bene-row" id="beneRow">
+    <!-- Card 1 -->
+    <article class="bene-card" data-idx="0">
+      <div class="bene-closed">
+        <span class="bene-num">01.</span>
+        <svg class="mosaic" data-seed="11" aria-hidden="true"></svg>
+        <h3>Replies in under 2 minutes</h3>
+      </div>
+      <div class="bene-open">
+        <div class="bene-mock">
+          <div class="mock-chat">
+            <p class="mock-chat-label">WhatsApp · today 11:42 PM</p>
+            <div class="chat-in">Hi, how much is a scaling appointment?</div>
+            <div class="chat-out">Hi! Scaling &amp; polishing is RM120–180. Want me to check tomorrow's slots for you? <span>11:42 PM ✓✓</span></div>
+          </div>
+        </div>
+        <h3>Replies in under 2 minutes</h3>
+        <p>Every WhatsApp, form and social enquiry gets an instant reply — 24/7, weekends included. No lead waits until Monday morning.</p>
+      </div>
+    </article>
+    <!-- Card 2 -->
+    <article class="bene-card" data-idx="1">
+      <div class="bene-closed">
+        <span class="bene-num">02.</span>
+        <svg class="mosaic" data-seed="23" aria-hidden="true"></svg>
+        <h3>Books while you work</h3>
+      </div>
+      <div class="bene-open">
+        <div class="bene-mock">
+          <div class="mock-list">
+            <p class="mock-chat-label">Tomorrow's reminders</p>
+            <div class="mock-row done"><span class="tick"></span>Confirm — Aina, 10:00 AM</div>
+            <div class="mock-row done"><span class="tick"></span>24-hr reminder — Mr Tan</div>
+            <div class="mock-row"><span class="tick open"></span>2-hr reminder — Priya, 2:30 PM</div>
+          </div>
+        </div>
+        <h3>Books while you work</h3>
+        <p>Auto-confirmations plus 24-hour and 2-hour reminders. Clinics on SenseBeat cut no-shows from 18% to 6% in two months.</p>
+      </div>
+    </article>
+    <!-- Card 3 -->
+    <article class="bene-card" data-idx="2">
+      <div class="bene-closed">
+        <span class="bene-num">03.</span>
+        <svg class="mosaic" data-seed="37" aria-hidden="true"></svg>
+        <h3>Shows where every ringgit goes</h3>
+      </div>
+      <div class="bene-open">
+        <div class="bene-mock">
+          <div class="mock-stat">
+            <p class="mock-chat-label">Cost per booking · live</p>
+            <p class="stat-big">RM 195 <span class="stat-down">▾ 46%</span></p>
+            <div class="bars"><i style="--h:38%"></i><i style="--h:55%"></i><i style="--h:44%"></i><i style="--h:72%"></i><i style="--h:60%"></i><i style="--h:88%"></i><i class="hot" style="--h:100%"></i></div>
+          </div>
+        </div>
+        <h3>Shows where every ringgit goes</h3>
+        <p>A live Meta + Google dashboard ties ad spend to actual bookings — CPL, ROAS and campaign comparisons updating in real time.</p>
+      </div>
+    </article>
+    <!-- Card 4 -->
+    <article class="bene-card" data-idx="3">
+      <div class="bene-closed">
+        <span class="bene-num">04.</span>
+        <svg class="mosaic" data-seed="52" aria-hidden="true"></svg>
+        <h3>Follows up so staff don't</h3>
+      </div>
+      <div class="bene-open">
+        <div class="bene-mock">
+          <div class="mock-list">
+            <p class="mock-chat-label">Automations · this week</p>
+            <div class="mock-row done"><span class="tick"></span>No-show re-engaged · 24 hrs</div>
+            <div class="mock-row done"><span class="tick"></span>Review request sent · post-visit</div>
+            <div class="mock-row done"><span class="tick"></span>Cold lead nudged · day 7</div>
+          </div>
+        </div>
+        <h3>Follows up so staff don't</h3>
+        <p>Missed call, cold lead, post-visit review — sequences fire on schedule. Your front desk does a 10-minute morning check, that's it.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ FEATURES TABS ============ -->
+<section class="features container" id="features">
+  <div class="sec-head split">
+    <div>
+      <p class="badge appear">What's inside</p>
+      <h2 class="appear d1">Set it up once.<br><em class="soft">It runs every day.</em></h2>
+    </div>
+    <p class="sec-sub appear d2">SenseBeat plugs into your ad accounts, WhatsApp and forms — then handles the daily grind of capturing, replying, reminding and reporting.</p>
+  </div>
+
+  <div class="feat-grid">
+    <div class="feat-menu appear" id="featMenu" role="tablist" aria-label="SenseBeat features">
+      <button class="feat-item active" role="tab" aria-selected="true" data-tab="0">
+        <span class="feat-title"><svg class="dbl" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3l5 5-5 5M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Every lead in one pipeline</span>
+        <span class="feat-desc">WhatsApp, Facebook, Instagram, Google and website forms land on one board, tagged by source and assigned automatically — through a ready-made clinic journey: enquiry, booked, attended, post-visit follow-up, re-engagement.</span>
+      </button>
+      <button class="feat-item" role="tab" aria-selected="false" data-tab="1">
+        <span class="feat-title"><svg class="dbl" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3l5 5-5 5M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>WhatsApp that answers itself</span>
+        <span class="feat-desc">Instant replies in BM, English or Chinese, nurture sequences and opt-in broadcasts — from one team inbox, not personal numbers.</span>
+      </button>
+      <button class="feat-item" role="tab" aria-selected="false" data-tab="2">
+        <span class="feat-title"><svg class="dbl" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3l5 5-5 5M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>A live ads dashboard</span>
+        <span class="feat-desc">Spend, CPL and bookings per campaign as they happen. Share one live link with your boss — no more monthly PDF exports.</span>
+      </button>
+      <button class="feat-item" role="tab" aria-selected="false" data-tab="3">
+        <span class="feat-title"><svg class="dbl" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3l5 5-5 5M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Reminders that cut no-shows</span>
+        <span class="feat-desc">Auto-confirm, remind at 24 hours and 2 hours, then request a Google review after the visit. All hands-free.</span>
+      </button>
+    </div>
+
+    <div class="feat-stage appear d1" id="featStage">
+      <!-- Screen 0: pipeline -->
+      <div class="screen active" data-screen="0">
+        <div class="app">
+          <aside class="app-side">
+            <p class="app-brand"><span class="app-logo">S</span>SenseBeat</p>
+            <p class="app-sec">Workspace</p>
+            <p class="app-link active">Pipeline</p>
+            <p class="app-link">Inbox <span class="pill">7</span></p>
+            <p class="app-link">Calendar</p>
+            <p class="app-sec">Reports</p>
+            <p class="app-link">Ads dashboard</p>
+          </aside>
+          <div class="app-main">
+            <p class="app-head">Pipeline / <b>This week</b></p>
+            <div class="kan">
+              <div class="kan-col"><p class="kan-h">New enquiry <span>12</span></p>
+                <div class="kcard"><b>Aina M.</b><span class="src wa">WhatsApp</span><i>Scaling — asked price</i></div>
+                <div class="kcard"><b>Mr Tan</b><span class="src fb">FB form</span><i>Braces consult</i></div>
+                <div class="kcard"><b>Farah K.</b><span class="src ig">Instagram</span><i>Facial promo enquiry</i></div>
+              </div>
+              <div class="kan-col"><p class="kan-h">Booked <span>8</span></p>
+                <div class="kcard"><b>Priya S.</b><span class="src ig">Instagram</span><i>Tue 2:30 PM · reminded</i></div>
+                <div class="kcard"><b>Daniel W.</b><span class="src gg">Google</span><i>Wed 10:00 AM</i></div>
+                <div class="kcard"><b>Hafiz R.</b><span class="src wa">WhatsApp</span><i>Thu 4:15 PM · confirmed</i></div>
+              </div>
+              <div class="kan-col"><p class="kan-h">Attended <span>21</span></p>
+                <div class="kcard"><b>Sofia L.</b><span class="src wa">WhatsApp</span><i>Review requested ✓</i></div>
+                <div class="kcard"><b>Jason T.</b><span class="src fb">FB form</span><i>Package upsell sent</i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Screen 1: inbox -->
+      <div class="screen" data-screen="1">
+        <div class="app">
+          <aside class="app-side">
+            <p class="app-brand"><span class="app-logo">S</span>SenseBeat</p>
+            <p class="app-sec">Workspace</p>
+            <p class="app-link">Pipeline</p>
+            <p class="app-link active">Inbox <span class="pill">3</span></p>
+            <p class="app-link">Broadcasts</p>
+            <p class="app-sec">Templates</p>
+            <p class="app-link">BM · EN · 中文</p>
+          </aside>
+          <div class="app-main">
+            <p class="app-head">Inbox / <b>WhatsApp</b></p>
+            <div class="inbox">
+              <div class="convo"><span class="ava">A</span><div><b>Aina</b><i>Auto-reply sent · 11:42 PM</i></div><span class="tag ok">replied &lt; 1 min</span></div>
+              <div class="convo"><span class="ava">T</span><div><b>Mr Tan</b><i>Nurture day 3 · brochure sent</i></div><span class="tag">sequence</span></div>
+              <div class="convo"><span class="ava">P</span><div><b>Priya</b><i>2-hr reminder scheduled</i></div><span class="tag">reminder</span></div>
+              <div class="convo"><span class="ava">H</span><div><b>Hafiz</b><i>Broadcast · Merdeka promo opt-in</i></div><span class="tag">broadcast</span></div>
+              <div class="chat-out wide">Hi Aina! We have 10:00 AM or 4:30 PM tomorrow — which works better? <span>11:42 PM ✓✓</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Screen 2: ads dashboard -->
+      <div class="screen" data-screen="2">
+        <div class="app">
+          <aside class="app-side">
+            <p class="app-brand"><span class="app-logo">S</span>SenseBeat</p>
+            <p class="app-sec">Reports</p>
+            <p class="app-link active">Ads dashboard</p>
+            <p class="app-link">Campaigns</p>
+            <p class="app-link">Monthly report</p>
+            <p class="app-sec">Sources</p>
+            <p class="app-link">Meta · Google</p>
+          </aside>
+          <div class="app-main">
+            <p class="app-head">Ads / <b>Live overview</b></p>
+            <div class="stats">
+              <div class="stat"><i>Spend · Aug</i><b>RM 8,014</b></div>
+              <div class="stat"><i>Bookings</i><b>41</b></div>
+              <div class="stat hot"><i>Cost / booking</i><b>RM 195</b></div>
+            </div>
+            <div class="graph"><i style="--h:30%"></i><i style="--h:42%"></i><i style="--h:38%"></i><i style="--h:56%"></i><i style="--h:48%"></i><i style="--h:64%"></i><i style="--h:58%"></i><i style="--h:76%"></i><i style="--h:70%"></i><i style="--h:88%"></i><i class="hot" style="--h:100%"></i><i style="--h:82%"></i></div>
+            <p class="graph-note">Meta · Klinik Bangsar — CPL trending down 46% this quarter</p>
+          </div>
+        </div>
+      </div>
+      <!-- Screen 3: reminders -->
+      <div class="screen" data-screen="3">
+        <div class="app">
+          <aside class="app-side">
+            <p class="app-brand"><span class="app-logo">S</span>SenseBeat</p>
+            <p class="app-sec">Automation</p>
+            <p class="app-link active">Reminder flow</p>
+            <p class="app-link">Nurture</p>
+            <p class="app-link">Re-engagement</p>
+            <p class="app-sec">Status</p>
+            <p class="app-link">All firing ✓</p>
+          </aside>
+          <div class="app-main">
+            <p class="app-head">Flow / <b>Appointment reminders</b></p>
+            <div class="flow">
+              <div class="fstep done"><span></span><div><b>Booking confirmed</b><i>WhatsApp · instant</i></div></div>
+              <div class="fstep done"><span></span><div><b>24-hour reminder</b><i>sent 9:00 AM · opened</i></div></div>
+              <div class="fstep act"><span></span><div><b>2-hour reminder</b><i>scheduled 12:30 PM</i></div></div>
+              <div class="fstep"><span></span><div><b>Google review request</b><i>fires after visit</i></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testi">
+  <div class="sec-head center container">
+    <p class="badge appear">What clients say</p>
+    <h2 class="appear d1">Clinics that stopped<br>chasing leads by hand</h2>
+    <p class="sec-sub appear d2">From single-doctor clinics to three-branch dental groups — what changes in the first 60 to 90 days.</p>
+  </div>
+  <div class="ticker-mask wide appear d2">
+    <div class="ticker-track slow" id="testiTicker">
+      <div class="ticker-set">
+        <figure class="review">
+          <blockquote>"47 leads came in and we used to book 22. Same ads, same budget — now it's 41 consultations a month. The reply goes out before we even pick up the phone."</blockquote>
+          <figcaption><span class="ava-lg">A</span><div><b>Aesthetic clinic owner</b><i>Bangsar, Kuala Lumpur</i></div></figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote>"No-shows went from 24% to 9% across three branches. It's the reminders — 24 hours before, 2 hours before, every single time."</blockquote>
+          <figcaption><span class="ava-lg">D</span><div><b>Dental group director</b><i>PJ · Cheras · Shah Alam</i></div></figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote>"I finally know which campaign fills the chairs. Cost per booking dropped from RM364 to RM195 — without touching the budget."</blockquote>
+          <figcaption><span class="ava-lg">M</span><div><b>Marketing manager</b><i>Skin clinic, Kuala Lumpur</i></div></figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote>"Monthly reporting used to take a day and a half across our branches. Now I open one link. Fifteen minutes, done."</blockquote>
+          <figcaption><span class="ava-lg">O</span><div><b>Operations lead</b><i>Dental group, Klang Valley</i></div></figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote>"Front desk checks the dashboard for ten minutes each morning. Everything else — replies, reminders, follow-ups — already happened overnight."</blockquote>
+          <figcaption><span class="ava-lg">C</span><div><b>Clinic manager</b><i>GP practice, Petaling Jaya</i></div></figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section class="pricing container" id="pricing">
+  <div class="sec-head split">
+    <div>
+      <p class="badge appear">Pricing</p>
+      <h2 class="appear d1">One subscription.<br><em class="soft">No tool stack.</em></h2>
+    </div>
+    <div class="price-right appear d2">
+      <p class="sec-sub">Replaces RM3,000+ a month of separate CRM, reporting and WhatsApp tools — one invoice, one login, one team.</p>
+      <div class="toggle" id="priceToggle" role="tablist" aria-label="Pricing mode">
+        <button class="tg active" role="tab" aria-selected="true" data-mode="solo">Standalone</button>
+        <button class="tg" role="tab" aria-selected="false" data-mode="bundle">With MYSense <span class="chip">−50%</span></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="price-row">
+    <article class="price-card appear">
+      <h3 class="tier">Demo</h3>
+      <p class="price">RM 0</p>
+      <p class="bill">no card, no commitment</p>
+      <p class="pdesc">See SenseBeat running on your numbers before you decide anything.</p>
+      <ul class="plist">
+        <li class="in">30-minute walkthrough on Zoom or WhatsApp</li>
+        <li class="in">Live sample ads dashboard</li>
+        <li class="in">Cost comparison vs your current tools</li>
+        <li class="in">Pipeline mapped to your patient journey</li>
+        <li class="in">PDPA &amp; KKLIU compliance Q&amp;A</li>
+        <li>CRM workspace</li>
+        <li>WhatsApp automation</li>
+        <li>Live ads connection</li>
+      </ul>
+      <a class="btn btn-secondary btn-wide" href="https://wa.me/60193541688?text=Hi%20MYSense%2C%20I%27d%20like%20a%20SenseBeat%20demo." target="_blank" rel="noopener"><span class="btn-ico"><svg viewBox="0 0 16 16"><path d="M4 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/></svg><svg viewBox="0 0 16 16"><path d="M4 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/></svg></span><span class="btn-label">Book a demo</span></a>
+    </article>
+
+    <article class="price-card featured appear d1">
+      <img class="pc-bg" src="assets/img/pro-card.jpg" alt="" aria-hidden="true">
+      <div class="pc-inner">
+        <h3 class="tier">SenseBeat Complete</h3>
+        <p class="price" id="mainPrice">RM 1,600</p>
+        <p class="bill" id="mainBill">per clinic / month, all-in · 6-month minimum</p>
+        <p class="pdesc">The full platform, set up and managed for you — live in 7 days or your setup fee back.</p>
+        <ul class="plist">
+          <li class="in">CRM pipeline, set up &amp; managed</li>
+          <li class="in">Live Meta + Google ads dashboard</li>
+          <li class="in">WhatsApp automation flow</li>
+          <li class="in">KKLIU-safe templates · BM/EN/中文</li>
+          <li class="in">PDPA 2024 compliant · DPA available</li>
+          <li class="in">8 hours dedicated management monthly</li>
+          <li class="in">Monthly strategy check-in &amp; report</li>
+          <li class="in">Account manager on WhatsApp</li>
+        </ul>
+        <a class="btn btn-primary btn-wide" href="https://wa.me/60193541688?text=Hi%20MYSense%2C%20I%20want%20SenseBeat%20for%20my%20clinic." target="_blank" rel="noopener"><span class="btn-ico"><svg viewBox="0 0 16 16"><path d="M4 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/></svg><svg viewBox="0 0 16 16"><path d="M4 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/></svg></span><span class="btn-label">Get started</span></a>
+      </div>
+    </article>
+
+    <article class="price-card appear d2">
+      <h3 class="tier">Enterprise &amp; groups</h3>
+      <p class="price">Custom</p>
+      <p class="bill">hospital groups &amp; multi-outlet chains</p>
+      <p class="pdesc">Unified visibility across branches, plus the paperwork your board will ask for.</p>
+      <ul class="plist">
+        <li class="in">Multi-branch pipelines &amp; lead routing</li>
+        <li class="in">Unified WhatsApp inbox, all outlets</li>
+        <li class="in">Role-based access &amp; audit trail</li>
+        <li class="in">Board-ready reporting</li>
+        <li class="in">Signed DPA for your legal team</li>
+        <li class="in">Vendor registration &amp; formal proposal</li>
+        <li class="in">Security assessment support</li>
+        <li class="in">Priority 2-hour support</li>
+      </ul>
+      <a class="btn btn-secondary btn-wide" href="https://wa.me/60193541688?text=Hi%20MYSense%2C%20we%27re%20a%20multi-outlet%20group%20interested%20in%20SenseBeat." target="_blank" rel="noopener"><span class="btn-ico"><svg viewBox="0 0 16 16"><path d="M4 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/></svg><svg viewBox="0 0 16 16"><path d="M4 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/></svg></span><span class="btn-label">Talk to us</span></a>
+    </article>
+  </div>
+  <div class="roi-band appear">
+    <div class="roi-copy">
+      <h3>Pays for itself with 11 extra patients.</h3>
+      <p>A private consultation in KL averages RM150–350. If SenseBeat recovers even a quarter of the leads a typical clinic misses each month, the subscription covers itself — everything after that is margin.</p>
+    </div>
+    <div class="roi-num"><b>11</b><span>extra patients a month<br>covers the full subscription</span></div>
+  </div>
+  <p class="price-note appear">+ one-time setup fee — ask your account manager · Add-ons: extra automation RM500 · WhatsApp API RM100/mo · 500-message WhatsApp blast RM250 · 500-email blast RM100</p>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="hiw container" id="how">
+  <div class="sec-head center">
+    <p class="badge appear">How it works</p>
+    <h2 class="appear d1">Live in 7 days.<br><em class="soft">Zero build work from your team.</em></h2>
+  </div>
+  <div class="hiw-panel appear d1">
+    <img class="hiw-bg" src="assets/img/panel.jpg" alt="" aria-hidden="true">
+    <div class="hiw-tabs" id="hiwTabs" role="tablist" aria-label="Onboarding steps">
+      <button class="htab active" role="tab" aria-selected="true" data-step="0">Connect your accounts</button>
+      <button class="htab" role="tab" aria-selected="false" data-step="1">We build everything</button>
+      <button class="htab" role="tab" aria-selected="false" data-step="2">Go live &amp; hand over</button>
+      <button class="htab" role="tab" aria-selected="false" data-step="3">Managed every month</button>
+    </div>
+    <div class="browser" id="hiwStage">
+      <div class="browser-bar"><span class="tl r"></span><span class="tl y"></span><span class="tl g"></span></div>
+      <div class="hscreen active" data-step="0">
+        <div class="app tall">
+          <aside class="app-side">
+            <p class="app-brand"><span class="app-logo">S</span>SenseBeat</p>
+            <p class="app-sec">Onboarding</p>
+            <p class="app-link active">Connections</p>
+            <p class="app-link">Brand kit</p>
+            <p class="app-link">Contacts import</p>
+          </aside>
+          <div class="app-main">
+            <p class="app-head">Day 1 / <b>Connect your accounts</b></p>
+            <div class="connect-grid">
+              <div class="connect ok"><img src="assets/logos/meta.svg" alt="">Meta Ads<span>Connected</span></div>
+              <div class="connect ok"><img src="assets/logos/googleads.svg" alt="">Google Ads<span>Connected</span></div>
+              <div class="connect ok"><img src="assets/logos/whatsapp.svg" alt="">WhatsApp API<span>Connected</span></div>
+              <div class="connect ok"><img src="assets/logos/googleanalytics.svg" alt="">GA4 &amp; Pixel<span>Connected</span></div>
+              <div class="connect ok"><img src="assets/logos/googlecalendar.svg" alt="">Google Calendar<span>Connected</span></div>
+              <div class="connect"><img src="assets/logos/googlesheets.svg" alt="">Contact list<span>Uploading…</span></div>
+            </div>
+            <p class="graph-note">You send logo, WABA number and ad account access — that's your whole job.</p>
+          </div>
+        </div>
+      </div>
+      <div class="hscreen" data-step="1">
+        <div class="app tall">
+          <aside class="app-side">
+            <p class="app-brand"><span class="app-logo">S</span>SenseBeat</p>
+            <p class="app-sec">Build log</p>
+            <p class="app-link active">Days 1–7</p>
+            <p class="app-link">Templates</p>
+            <p class="app-link">Test runs</p>
+          </aside>
+          <div class="app-main">
+            <p class="app-head">Days 2–6 / <b>MYSense builds your system</b></p>
+            <div class="flow">
+              <div class="fstep done"><span></span><div><b>Workspace branded</b><i>logo &amp; colours · day 1–2</i></div></div>
+              <div class="fstep done"><span></span><div><b>Dashboard connected</b><i>Meta + Google live · day 2–3</i></div></div>
+              <div class="fstep done"><span></span><div><b>Pipeline configured</b><i>5-stage clinic journey · day 4–5</i></div></div>
+              <div class="fstep act"><span></span><div><b>WhatsApp flow tested</b><i>KKLIU-safe templates · day 5–6</i></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hscreen" data-step="2">
+        <div class="app tall">
+          <aside class="app-side">
+            <p class="app-brand"><span class="app-logo">S</span>SenseBeat</p>
+            <p class="app-sec">Handover</p>
+            <p class="app-link active">Day 7</p>
+            <p class="app-link">Recording</p>
+            <p class="app-link">Support</p>
+          </aside>
+          <div class="app-main">
+            <p class="app-head">Day 7 / <b>Walkthrough &amp; go-live</b></p>
+            <div class="stats">
+              <div class="stat"><i>Team walkthrough</i><b>30 min, recorded</b></div>
+              <div class="stat"><i>Handover doc</i><b>Delivered</b></div>
+              <div class="stat hot"><i>Guarantee</i><b>Live by day 7</b></div>
+            </div>
+            <p class="graph-note">Not live in 7 working days? Your setup fee is fully refunded.</p>
+          </div>
+        </div>
+      </div>
+      <div class="hscreen" data-step="3">
+        <div class="app tall">
+          <aside class="app-side">
+            <p class="app-brand"><span class="app-logo">S</span>SenseBeat</p>
+            <p class="app-sec">Management</p>
+            <p class="app-link active">This month</p>
+            <p class="app-link">SLA log</p>
+            <p class="app-link">Reports</p>
+          </aside>
+          <div class="app-main">
+            <p class="app-head">Every month / <b>8 dedicated hours, done for you</b></p>
+            <div class="flow">
+              <div class="fstep done"><span></span><div><b>Pipeline health review</b><i>~3 hrs · stalled leads flagged to you on WhatsApp</i></div></div>
+              <div class="fstep done"><span></span><div><b>Automation monitoring</b><i>~1.5 hrs · broken triggers fixed the same day</i></div></div>
+              <div class="fstep done"><span></span><div><b>Ads dashboard upkeep</b><i>~1 hr · reconnections &amp; new campaigns added</i></div></div>
+              <div class="fstep done"><span></span><div><b>Monthly strategy check-in</b><i>30-min call · one action item agreed</i></div></div>
+              <div class="fstep act"><span></span><div><b>Support &amp; fixes</b><i>WhatsApp replies within 4 business hours, Mon–Fri</i></div></div>
+            </div>
+            <p class="graph-note">Your report lands on the 1st: leads captured, appointments booked, cost per booking.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq container" id="faq">
+  <div class="faq-left">
+    <p class="badge appear">FAQ</p>
+    <h2 class="appear d1">Questions,<br>answered.</h2>
+    <p class="faq-cur appear d2">Still deciding?</p>
+    <div class="appear d2">
+      <a class="btn btn-primary" href="https://wa.me/60193541688?text=Hi%20MYSense%2C%20quick%20question%20about%20SenseBeat." target="_blank" rel="noopener"><span class="btn-ico"><svg viewBox="0 0 16 16"><path d="M4 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/></svg><svg viewBox="0 0 16 16"><path d="M4 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/></svg></span><span class="btn-label">WhatsApp us</span></a>
+    </div>
+    <svg class="mosaic faq-mosaic appear d3" data-seed="77" data-cols="26" data-rows="6" aria-hidden="true"></svg>
+  </div>
+  <div class="faq-list appear d1">
+    <details class="qa">
+      <summary>Is patient data safe with SenseBeat?<span class="plus" aria-hidden="true"></span></summary>
+      <div class="qa-body"><p>SenseBeat is operated by MYSense Sdn Bhd, a Malaysian-registered company compliant with PDPA 2010 and the 2024 amendments. We handle marketing lead data only — name, contact, enquiry source — never clinical records or EMR data, and we provide a signed Data Processing Agreement on request.</p></div>
+    </details>
+    <details class="qa">
+      <summary>Will my team actually use it?<span class="plus" aria-hidden="true"></span></summary>
+      <div class="qa-body"><p>There's nothing for them to build. MYSense sets everything up in 7 days, then walks your front desk through it live — a 30-minute recorded session. Day to day, it's a 10-minute morning check of one dashboard, and your account manager is one WhatsApp message away.</p></div>
+    </details>
+    <details class="qa">
+      <summary>We already use spreadsheets or another system.<span class="plus" aria-hidden="true"></span></summary>
+      <div class="qa-body"><p>SenseBeat sits on top of what you have — it connects to most tools via webhook and Zapier, and we don't replace your clinic management system. Bring your current costs to the demo: most clinics find they're paying more across separate tools than SenseBeat costs all-in.</p></div>
+    </details>
+    <details class="qa">
+      <summary>How fast can we go live?<span class="plus" aria-hidden="true"></span></summary>
+      <div class="qa-body"><p>Seven working days from kickoff. You provide your logo, WhatsApp Business account and ad account access on day 1; we build, test and hand over by day 7 — or your setup fee is fully refunded.</p></div>
+    </details>
+    <details class="qa">
+      <summary>Is the messaging KKLIU-compliant?<span class="plus" aria-hidden="true"></span></summary>
+      <div class="qa-body"><p>Yes. Every automated template for healthcare clients is reviewed against KKLIU advertising guidelines before deployment, and broadcasts use explicit opt-in consent flows — MMC-safe by default.</p></div>
+    </details>
+    <details class="qa">
+      <summary>Does it fit my specialty?<span class="plus" aria-hidden="true"></span></summary>
+      <div class="qa-body"><p>SenseBeat ships with pre-configured flows for dental, aesthetic, GP, chiropractic, wellness and specialist clinics — each with the five-stage clinic journey ready on day one. Non-healthcare businesses run the same system with a pipeline mapped to their own sales steps.</p></div>
+    </details>
+  </div>
+</section>
+
+<!-- ============ INTEGRATIONS ============ -->
+<section class="integrations">
+  <div class="sec-head center container">
+    <p class="badge appear">Integrations</p>
+    <h2 class="appear d1">Plugs into your stack.<br><em class="soft">No rip-and-replace.</em></h2>
+    <p class="sec-sub appear d2">Meta, Google, WhatsApp Business API, TikTok and more — SenseBeat connects the platforms you already run and keeps every lead in sync.</p>
+  </div>
+  <div class="int-grid container appear d2" id="intGrid">
+    <span class="int"><img src="assets/logos/meta.svg" alt="Meta"></span>
+    <span class="int"><img src="assets/logos/facebook.svg" alt="Facebook"></span>
+    <span class="int"><img src="assets/logos/instagram.svg" alt="Instagram"></span>
+    <span class="int"><img src="assets/logos/messenger.svg" alt="Messenger"></span>
+    <span class="int"><img src="assets/logos/whatsapp.svg" alt="WhatsApp Business"></span>
+    <span class="int"><img src="assets/logos/googleads.svg" alt="Google Ads"></span>
+    <span class="int"><img src="assets/logos/googleanalytics.svg" alt="Google Analytics 4"></span>
+    <span class="int"><img src="assets/logos/googletagmanager.svg" alt="Google Tag Manager"></span>
+    <span class="int"><img src="assets/logos/googlecalendar.svg" alt="Google Calendar"></span>
+    <span class="int"><img src="assets/logos/googleforms.svg" alt="Google Forms"></span>
+    <span class="int"><img src="assets/logos/googlesheets.svg" alt="Google Sheets"></span>
+    <span class="int"><img src="assets/logos/gmail.svg" alt="Gmail"></span>
+    <span class="int"><img src="assets/logos/tiktok.svg" alt="TikTok Ads"></span>
+    <span class="int"><img src="assets/logos/zapier.svg" alt="Zapier"></span>
+    <span class="int"><img src="assets/logos/wordpress.svg" alt="WordPress"></span>
+    <span class="int"><img src="assets/logos/googlechrome.svg" alt="Website chat widget"></span>
+  </div>
+  <p class="int-note container appear d2">Also connects: MyCLNQ · Clinic+ · custom HIS via webhook · SMS gateway · email (SMTP/Gmail). Don't see your system? We wire it in through webhooks and Zapier.</p>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="cta container">
+  <div class="cta-panel appear">
+    <img class="cta-bg" src="assets/img/cta.jpg" alt="" aria-hidden="true">
+    <div class="cta-tint" aria-hidden="true"></div>
+    <div class="cta-content">
+      <h2>Stop the leak.<br><em class="soft-w">Start booking.</em></h2>
+      <p>SenseBeat live in your clinic within 7 days — or your setup fee back. PDPA-compliant, KKLIU-safe, managed by MYSense.</p>
+      <a class="btn btn-primary btn-lg" href="https://wa.me/60193541688?text=Hi%20MYSense%2C%20let%27s%20get%20SenseBeat%20live%20in%20my%20clinic." target="_blank" rel="noopener"><span class="btn-ico"><svg viewBox="0 0 16 16"><path d="M4 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/></svg><svg viewBox="0 0 16 16"><path d="M4 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".45"/></svg></span><span class="btn-label">Book your onboarding call</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="foot-top">
+      <a class="logo" href="#top">SenseBeat</a>
+      <div class="socials">
+        <span class="soc-label">Social media</span>
+        <a class="soc" href="https://www.facebook.com/mysensemy" target="_blank" rel="noopener" aria-label="Facebook"><img src="assets/logos/facebook.svg" alt=""></a>
+        <a class="soc" href="https://www.instagram.com/mysense.my" target="_blank" rel="noopener" aria-label="Instagram"><img src="assets/logos/instagram.svg" alt=""></a>
+        <a class="soc" href="https://www.linkedin.com/company/mysense-my" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="assets/logos/linkedin.svg" alt=""></a>
+      </div>
+    </div>
+    <div class="foot-mid">
+      <p class="foot-desc">The CRM and automation layer behind MYSense campaigns. Built at Jaya One, Petaling Jaya, for Malaysian clinics and growing businesses.</p>
+      <div class="foot-cols">
+        <div class="fcol">
+          <p class="fhead"><span class="sq" aria-hidden="true"></span>Product</p>
+          <a href="#why">Why SenseBeat</a>
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#how">Onboarding</a>
+        </div>
+        <div class="fcol">
+          <p class="fhead"><span class="sq" aria-hidden="true"></span>Company</p>
+          <a href="https://mysense.com.my" target="_blank" rel="noopener">MYSense</a>
+          <a href="https://wa.me/60193541688" target="_blank" rel="noopener">WhatsApp us</a>
+          <a href="tel:+60193541688">+60 19 354 1688</a>
+        </div>
+        <div class="fcol">
+          <p class="fhead"><span class="sq" aria-hidden="true"></span>Legal</p>
+          <a href="#faq">PDPA compliance</a>
+          <a href="#faq">KKLIU guidelines</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-mark" aria-hidden="true">
+      <span class="ghost">SenseBeat</span>
+      <svg class="mosaic foot-mosaic" data-seed="91" data-cols="40" data-rows="7"></svg>
+    </div>
+    <p class="foot-legal">© 2026 SenseBeat · MYSense Sdn Bhd, Jaya One, Petaling Jaya &nbsp;·&nbsp; With us, everything makes sense.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
