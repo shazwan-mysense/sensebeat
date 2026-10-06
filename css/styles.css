@@ -46,6 +46,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 
 h1,h2,h3{font-family:var(--font);color:var(--navy)}
 h1,h2{font-weight:800;letter-spacing:-.02em;line-height:1.05}
+h2{text-wrap:balance}
 h2{font-size:46px}
 h3{font-weight:700;font-size:20px;line-height:1.2;letter-spacing:-.01em}
 .hl{color:var(--yellow)}
@@ -105,12 +106,21 @@ h3{font-weight:700;font-size:20px;line-height:1.2;letter-spacing:-.01em}
 .burger.open span:last-child{top:19px;transform:rotate(-45deg)}
 .mobile-menu{display:none}
 
-/* ============ HERO — flat navy (guide p.4, p.10) ============ */
-.hero{padding:4px 28px 0}
-.hero-card{position:relative;border-radius:var(--r-lg);overflow:hidden;min-height:600px;display:flex;align-items:center;justify-content:center;background:var(--navy)}
-.hero-content{position:relative;text-align:center;max-width:920px;padding:96px 32px}
-.hero-content h1{font-size:72px;color:#fff}
-.hero-content p{color:rgba(255,255,255,.82);max-width:560px;margin:28px auto 34px;font-size:17px}
+/* ============ HERO — product walkthrough video as the card, navy shade, centred text ============ */
+.hero{padding:4px clamp(10px,2.2vw,28px) 0}
+.hero-card{position:relative;max-width:1880px;margin:0 auto;border-radius:clamp(18px,2vw,26px);overflow:hidden;
+  background:var(--navy);isolation:isolate;
+  height:clamp(520px,calc(100vh - 100px),940px);height:clamp(520px,calc(100dvh - 100px),940px);
+  display:flex;align-items:center;justify-content:center;padding:48px clamp(20px,5vw,80px)}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero-shade{position:absolute;inset:0;z-index:-1;
+  background:
+    radial-gradient(ellipse 38% 34% at 50% 54%, rgba(9,22,52,.80) 0%, rgba(9,22,52,.55) 50%, rgba(9,22,52,0) 100%),
+    linear-gradient(180deg, rgba(9,22,52,.50) 0%, rgba(9,22,52,.40) 50%, rgba(9,22,52,.58) 100%)}
+.hero-content h1,.hero-sub{text-shadow:0 2px 28px rgba(9,22,52,.55)}
+.hero-content{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;max-width:980px}
+.hero-content h1{font-size:clamp(36px,calc(2.6vw + 18px),70px);color:#fff}
+.hero-sub{text-wrap:balance;font-weight:500;color:rgba(255,255,255,.92);max-width:640px;margin:clamp(18px,2.2vw,28px) auto clamp(26px,2.8vw,38px);font-size:clamp(16px,.35vw + 13px,18.5px);line-height:1.55}
 
 /* ============ PLATFORM STRIP ============ */
 .trusted{padding:64px 0 8px;text-align:center}
@@ -366,7 +376,6 @@ h3{font-weight:700;font-size:20px;line-height:1.2;letter-spacing:-.01em}
 @media (max-width:1239.98px){
   .container{padding-left:32px;padding-right:32px}
   h2{font-size:38px}
-  .hero-content h1{font-size:58px}
   .cta-content h2{font-size:44px}
   .stat-grid{grid-template-columns:repeat(2,1fr)}
   .bene-row{flex-wrap:wrap}
@@ -385,6 +394,9 @@ h3{font-weight:700;font-size:20px;line-height:1.2;letter-spacing:-.01em}
    PHONE ≤809
    ============================================================ */
 @media (max-width:809.98px){
+  .hero-card{height:auto;min-height:min(82svh,700px);padding:56px 22px}
+  .hero-content h1{font-size:clamp(34px,9.4vw,46px)}
+  .hero-shade{background:radial-gradient(ellipse 80% 46% at 50% 50%, rgba(9,22,52,.55), rgba(9,22,52,0)),linear-gradient(180deg, rgba(9,22,52,.58), rgba(9,22,52,.52) 50%, rgba(9,22,52,.66))}
   .container{padding-left:20px;padding-right:20px}
   h2{font-size:30px}
   .sec-head{margin-bottom:36px}
@@ -399,11 +411,6 @@ h3{font-weight:700;font-size:20px;line-height:1.2;letter-spacing:-.01em}
   .mobile-menu a:not(.btn){font-size:26px;font-weight:700;letter-spacing:-.02em;padding:12px 0;border-bottom:1px solid var(--line)}
   .mobile-menu .btn{margin-top:22px;align-self:flex-start}
 
-  .hero{padding:4px 12px 0}
-  .hero-card{min-height:min(78vh,640px);min-height:min(78svh,640px)}
-  .hero-content{padding:60px 22px}
-  .hero-content h1{font-size:44px}
-  .hero-content p{font-size:16px}
 
   .trusted{padding-top:48px}
   .tlogo{padding:0 22px;font-size:15px}

@@ -17,6 +17,19 @@
   );
   document.querySelectorAll(".appear").forEach((el) => io.observe(el));
 
+  /* ---------- hero video: pause off-screen, respect reduced motion ---------- */
+  const heroVideo = document.querySelector(".hero-bg");
+  if (heroVideo) {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      heroVideo.removeAttribute("autoplay");
+      heroVideo.pause();
+    } else {
+      new IntersectionObserver((es) => {
+        es[0].isIntersecting ? heroVideo.play().catch(() => {}) : heroVideo.pause();
+      }, { threshold: 0.15 }).observe(heroVideo);
+    }
+  }
+
   /* ---------- tickers: duplicate set for a continuous loop ---------- */
   document.querySelectorAll(".ticker-track").forEach((track) => {
     const set = track.querySelector(".ticker-set");
